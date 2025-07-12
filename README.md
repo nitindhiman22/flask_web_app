@@ -29,7 +29,7 @@ This is **Project 1** of my DevOps Project Series. It demonstrates how to build 
 
 ----------------------------------------------------------------------------------------------
 
-## 🔧 Pre-requisites
+## Pre-requisites
 
 Before starting the project, the following were done:
 
@@ -42,7 +42,7 @@ Before starting the project, the following were done:
 
 ----------------------------------------------------------------------------------------------
 
-## 🚀 Project Procedure
+## Project Procedure
 
 ### Step 1: GitHub Repository Setup
 
@@ -56,7 +56,7 @@ git init
 git remote add origin <repo_url>
 git pull origin main
 
-Step 2: Created a Simple Flask App
+### Step 2: Created a Simple Flask App
 📄 app.py
 
 from flask import Flask
@@ -73,7 +73,7 @@ def lwphone():
 
 app.run(host="0.0.0.0", port=5000)
 
-Step 3: Created a Unit Test File
+### Step 3: Created a Unit Test File
 📄 test_app.py
 
 from app import lwphone
@@ -81,7 +81,7 @@ from app import lwphone
 def test_lwphone():
     assert lwphone() == "9808580941"
 
-Step 4: Created a Dockerfile
+### Step 4: Created a Dockerfile
 📄 Dockerfile
 
 FROM redhat/ubi8
@@ -90,13 +90,13 @@ RUN pip3 install flask
 COPY app.py /app.py
 CMD ["python3", "/app.py"]
 
-Step 5: Git Operations
+### Step 5: Git Operations
 
 git add .
 git commit -m "Initial commit with app, test and Dockerfile"
 git push origin main
 
-Step 6: Jenkins CI/CD Setup
+### Step 6: Jenkins CI/CD Setup
 Accessed Jenkins at http://<EC2-IP>:8080
 
 Created Freestyle Project
@@ -116,20 +116,17 @@ docker push nitindhiman22/myweb:v1
 docker rm -f myweb || true
 docker run -dit --name myweb -p 5000:5000 nitindhiman22/myweb:v1
 
-Results
+### Results
 Triggered Build Now in Jenkins
 
 Build successfully cloned repo, built image, pushed to Docker Hub, and deployed the container
 
 Accessed the app using browser:
 
-arduino
-Copy
-Edit
 http://<EC2-IP>:5000/info
 http://<EC2-IP>:5000/phone
 
-Output:
+## Output:
 /info: "i am nitin dhiman and i have run this pipeline"
 
 /phone: "9808580941"
