@@ -100,7 +100,7 @@ COPY app.py /app.py
 CMD ["python3", "/app.py"]
 ```
 
-ALL FILES SHOULD BE IN THE SAME DIRECTORY
+***ALL FILES SHOULD BE IN THE SAME DIRECTORY***
 
 ### Step 5: Git Operations
 
@@ -160,7 +160,10 @@ Docker Hub Link:
 ### Author
 Nitin Dhiman
 DevOps Enthusiast | Learner on 60 Days DevOps Challenge
-LinkedIn:- www.linkedin.com/in/nitin-dhiman22 | GitHub:- https://github.com/nitindhiman22
+
+LinkedIn:- www.linkedin.com/in/nitin-dhiman22 
+
+GitHub:- https://github.com/nitindhiman22
 
 ⭐️ Support
 If you found this project useful, please ⭐️ the repo and follow me on LinkedIn. More DevOps projects coming soon!
