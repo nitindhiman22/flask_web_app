@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/info")
 def lwinfo():
-	return "i am nitin dhiman and i have run this pipeline"
+	return "i am nitin dhiman"
 
 @app.route("/phone")
 def lwphone():
