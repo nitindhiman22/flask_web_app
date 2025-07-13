@@ -136,9 +136,9 @@ http://<EC2-IP>:5000/info
 http://<EC2-IP>:5000/phone
 ```
 ## Output:
-/info: "i am nitin dhiman and i have run this pipeline"
+/info: "i am nitin dhiman"
 
-/phone: "9808580941"
+/phone: "9808xxxxxx"
 
 Screenshots
 (SS will be added soon)
